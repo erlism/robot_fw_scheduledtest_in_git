@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Version') {
             steps {
-                sh 'robot -d output tasks.robot'
+                sh 'rcc run'
             }
         }
     }
